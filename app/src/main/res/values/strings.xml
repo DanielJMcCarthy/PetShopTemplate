@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name"><b><center>Barking Mad Pet Supplies</center></b></string>
+
+    <!-- Strings About Us -->
+    <string name="tv_title"><b><H1><center>About Us</center></H1></b></string>
+    <string name="tv_about">This brand new one-stop-shop allows you to purchase everything your pampered pet could need, want, or even dream of - all from the comfort of your own phone!
+                            Our wide variety of products and our tailored delivery options make us Number 1 in customer satisfaction.
+                            We look forward to doing business with you - get your paws, claws, and fins all over our new releases!
+    </string>
+
+    <!-- Strings login -->
+    <string name="et_email">Email</string>
+    <string name="et_password">Password</string>
+    <string name="et_name">Name</string>
+    <string name="btn_login">Sign In or Register</string>
+
+
+
+</resources>
