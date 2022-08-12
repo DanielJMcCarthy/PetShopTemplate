@@ -2,6 +2,7 @@ package com.example.barkingmadpetstorev2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -43,9 +44,6 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Error saving user", Toast.LENGTH_SHORT).show();
                     userModel = new UserModel("email_error", "password_error", "name_error" );
                 }
-
-
-
 
 
                 //String validations
@@ -90,7 +88,19 @@ public class MainActivity extends AppCompatActivity {
                 // On successful data creation, addUser method from userModel
                 boolean onSuccess = dataBaseController.addUser(userModel);
 //                Toast.makeText(MainActivity.this, "Welcome" + userModel.getUsername() + "!" + "onSuccess= " + onSuccess, Toast.LENGTH_SHORT).show();
+
+
+
+                /*todo
+                 everything above this will have to go in some sort of a do - while loop.
+                 When all conditions are satisfied, the on click listener can move to the next page */
+
+                // Explicit intent
+                Intent goToSecondActivity = new Intent(v.getContext(), SecondActivity.class);
+                startActivity(goToSecondActivity);
+
             }
+
         });
 
 
