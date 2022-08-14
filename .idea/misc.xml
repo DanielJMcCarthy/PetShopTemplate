@@ -4,7 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/BarkingMadPetStorev2/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/BarkingMadPetStorev2/app/src/main/res/layout/activity_shop.xml" value="0.5541666666666667" />
+        <entry key="..\:/BarkingMadPetStorev2/app/src/main/res/layout/activity_shop.xml" value="0.5" />
+        <entry key="..\:/BarkingMadPetStorev2/app/src/main/res/menu/bottom_nav_bar.xml" value="0.5536458333333333" />
       </map>
     </option>
   </component>
