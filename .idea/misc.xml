@@ -5,6 +5,9 @@
       <map>
         <entry key="..\:/BarkingMadPetStorev2/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/BarkingMadPetStorev2/app/src/main/res/layout/activity_shop.xml" value="0.5" />
+        <entry key="..\:/BarkingMadPetStorev2/app/src/main/res/layout/fragment_basket.xml" value="0.38405797101449274" />
+        <entry key="..\:/BarkingMadPetStorev2/app/src/main/res/layout/fragment_home.xml" value="0.38405797101449274" />
+        <entry key="..\:/BarkingMadPetStorev2/app/src/main/res/layout/fragment_shop.xml" value="0.38405797101449274" />
         <entry key="..\:/BarkingMadPetStorev2/app/src/main/res/menu/bottom_nav_bar.xml" value="0.5536458333333333" />
       </map>
     </option>
