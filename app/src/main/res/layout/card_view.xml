@@ -31,42 +31,45 @@
                 android:src="@drawable/ic_launcher_background" />
 
             <LinearLayout
-                android:layout_gravity="center"
-                android:layout_width="match_parent"
+                android:layout_width="191dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_gravity="center"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/item_title"
-                    android:layout_margin="50dp"
-                    android:layout_gravity="center"
                     android:layout_width="121dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
                     android:ems="10"
                     android:textSize="20sp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/item_price"
                     android:layout_width="64dp"
-                    android:layout_height="26dp"
-                    android:layout_margin="50dp"
+                    android:layout_height="31dp"
                     android:layout_gravity="center"
+
                     android:textSize="12sp" />
-                <!-- Need to add the above 3 to the main activity and the adapter etc-->
+
+
             </LinearLayout>
+
+
+
+
+            <!-- Need to add the above 3 to the main activity and the adapter etc-->
+
 
         </LinearLayout>
 
+        <ImageButton
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            app:srcCompat="@drawable/ic_baseline_more_vert_24" />
     </androidx.cardview.widget.CardView>
 
 </LinearLayout>
