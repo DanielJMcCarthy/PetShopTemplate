@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
                  When all conditions are satisfied, the on click listener can move to the next page */
 
                 // Explicit intent
-                Intent goToSecondActivity = new Intent(v.getContext(), SecondActivity.class);
+                Intent goToSecondActivity = new Intent(v.getContext(), HomeActivity.class);
                 startActivity(goToSecondActivity);
 
             }
