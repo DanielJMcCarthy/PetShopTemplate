@@ -1,6 +1,5 @@
 package com.example.barkingmadpetstorev2;
 
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -8,23 +7,21 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
+//import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 
 import com.example.barkingmadpetstorev2.databinding.ActivityHomeBinding;
+import com.example.barkingmadpetstorev2.databinding.ActivityShopBinding;
 
-
-
-public class HomeActivity extends AppCompatActivity{
-    ActivityHomeBinding binding;
+public class ShopActivity extends AppCompatActivity {
+    ActivityShopBinding binding;
 //    final Handler handler = new Handler();
-    Button btn_logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityHomeBinding.inflate(getLayoutInflater());
+        binding = ActivityShopBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
@@ -34,14 +31,16 @@ public class HomeActivity extends AppCompatActivity{
 
                 case R.id.home:
                     replaceFragment(new HomeFragment());
-//                    Intent homeIntent = new Intent(this, HomeActivity.class);
-//                    startActivity(homeIntent);
+//                    handler.postDelayed((Runnable) this, 300);
+                    // Explicit intent
+                    Intent homeIntent = new Intent(this, HomeActivity.class);
+                    startActivity(homeIntent);
+
                     break;
                 case R.id.shop:
-                    Intent shopIntent = new Intent(this, ShopActivity.class);
-                    startActivity(shopIntent);
                     replaceFragment(new ShopFragment());
-//                    handler.postDelayed((Runnable) this, 300);
+//                    Intent shopIntent = new Intent(this, ShopActivity.class);
+//                    startActivity(shopIntent);
                     break;
                 case R.id.basket:
                     Intent basketIntent = new Intent(this, BasketActivity.class);
@@ -56,21 +55,6 @@ public class HomeActivity extends AppCompatActivity{
             return true;
         });
 
-        btn_logout = findViewById(R.id.btn_logout);
-
-        // Listener for the login button
-        btn_logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                // Explicit intent
-                Intent goToLogin = new Intent(v.getContext(), MainActivity.class);
-                startActivity(goToLogin);
-
-            }
-
-        });
-        
     }
 
 
