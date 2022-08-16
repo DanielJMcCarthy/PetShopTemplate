@@ -48,6 +48,11 @@ public class HomeActivity extends AppCompatActivity{
                     startActivity(basketIntent);
                     replaceFragment(new BasketFragment());
                     break;
+                case R.id.checkout:
+                    Intent checkoutIntent = new Intent(this, CheckoutActivity.class);
+                    startActivity(checkoutIntent);
+                    replaceFragment(new CheckoutFragment());
+                    break;
 
 
 

@@ -14,6 +14,8 @@ import android.widget.Button;
 import com.example.barkingmadpetstorev2.databinding.ActivityHomeBinding;
 import com.example.barkingmadpetstorev2.databinding.ActivityShopBinding;
 
+
+
 public class ShopActivity extends AppCompatActivity {
     ActivityShopBinding binding;
 //    final Handler handler = new Handler();
@@ -35,7 +37,6 @@ public class ShopActivity extends AppCompatActivity {
                     // Explicit intent
                     Intent homeIntent = new Intent(this, HomeActivity.class);
                     startActivity(homeIntent);
-
                     break;
                 case R.id.shop:
                     replaceFragment(new ShopFragment());
@@ -47,8 +48,11 @@ public class ShopActivity extends AppCompatActivity {
                     startActivity(basketIntent);
                     replaceFragment(new BasketFragment());
                     break;
-
-
+                case R.id.checkout:
+                    Intent checkoutIntent = new Intent(this, CheckoutActivity.class);
+                    startActivity(checkoutIntent);
+                    replaceFragment(new CheckoutFragment());
+                    break;
 
             }
 
@@ -56,9 +60,6 @@ public class ShopActivity extends AppCompatActivity {
         });
 
     }
-
-
-
 
     // Method for swapping out fragments
     private void replaceFragment(Fragment fragment){

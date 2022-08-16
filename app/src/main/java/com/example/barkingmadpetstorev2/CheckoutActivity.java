@@ -8,16 +8,16 @@ import androidx.fragment.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.barkingmadpetstorev2.databinding.ActivityBasketBinding;
+import com.example.barkingmadpetstorev2.databinding.ActivityCheckoutBinding;
 
-public class BasketActivity extends AppCompatActivity {
+public class CheckoutActivity extends AppCompatActivity {
 
-    ActivityBasketBinding binding;
+    ActivityCheckoutBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityBasketBinding.inflate(getLayoutInflater());
+        binding = ActivityCheckoutBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
 
@@ -38,15 +38,13 @@ public class BasketActivity extends AppCompatActivity {
                     replaceFragment(new ShopFragment());
                     break;
                 case R.id.basket:
+                    Intent basketIntent = new Intent(this, BasketActivity.class);
+                    startActivity(basketIntent);
                     replaceFragment(new BasketFragment());
                     break;
                 case R.id.checkout:
-                    Intent checkoutIntent = new Intent(this, CheckoutActivity.class);
-                    startActivity(checkoutIntent);
                     replaceFragment(new CheckoutFragment());
                     break;
-
-
             }
 
             return true;
@@ -55,12 +53,12 @@ public class BasketActivity extends AppCompatActivity {
     }
 
 
-        // Method for swapping out fragments
-        private void replaceFragment (Fragment fragment){
+    // Method for swapping out fragments
+    private void replaceFragment (Fragment fragment){
 
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.bottomNavigationView, fragment);
-            fragmentTransaction.commit();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.bottomNavigationView, fragment);
+        fragmentTransaction.commit();
     }
 }
