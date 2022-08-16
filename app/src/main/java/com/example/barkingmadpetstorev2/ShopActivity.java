@@ -14,8 +14,6 @@ import android.widget.Button;
 import com.example.barkingmadpetstorev2.databinding.ActivityHomeBinding;
 import com.example.barkingmadpetstorev2.databinding.ActivityShopBinding;
 
-
-
 public class ShopActivity extends AppCompatActivity {
     ActivityShopBinding binding;
 //    final Handler handler = new Handler();

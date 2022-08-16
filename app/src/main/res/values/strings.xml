@@ -22,12 +22,18 @@
     <string name="btn_logout">Log Out</string>
     <string name="tv_welcome">Welcome to our store!</string>
 
+    <!-- Checkout -->
+    <string name="tv_pay_header">Pay Invoice</string>
+
 
     <!-- Strings Nav Bar -->
     <string name="home">Home</string>
     <string name="shop">Shop</string>
     <string name="basket">Basket</string>
     <string name="checkout">Checkout</string>
-
+    <string name="pay_invoice">Pay Invoice</string>
+    <string name="payment_amount">Payment amount</string>
+    <string name="tv_total_cost">€</string>
+    <string name="name_on_card">Name on card</string>
 
 </resources>

@@ -17,13 +17,60 @@
         app:menu="@menu/bottom_nav_bar" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="60dp"
-        android:layout_height="18dp"
-        android:layout_marginTop="56dp"
-        android:text="checkout"
+        android:id="@+id/tv_pay_header"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/light_gray"
+        android:text="@string/pay_invoice"
+        android:textAlignment="center"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_pay_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/payment_amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pay_header" />
+
+    <TextView
+        android:id="@+id/tv_total_cost"
+        android:layout_width="60dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_total_cost"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pay_amount" />
+
+    <TextView
+        android:id="@+id/tv_pay_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/name_on_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total_cost" />
+
+    <EditText
+        android:layout_width="315dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pay_name" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
