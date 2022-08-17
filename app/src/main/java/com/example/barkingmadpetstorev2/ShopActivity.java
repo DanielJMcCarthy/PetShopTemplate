@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -56,6 +58,34 @@ public class ShopActivity extends AppCompatActivity {
 
             return true;
         });
+
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
+        recyclerView.setHasFixedSize(true);
+        //This will be where i run into problems todo
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+
+        ShopData[] shopData = new ShopData[]{
+
+                new ShopData(R.drawable.birdladderbridge,"Bird ladder bridge", "7"),
+                new ShopData(R.drawable.cattoytowertracks,"Cat toy", "10"),
+                new ShopData(R.drawable.cattree,"Cat tree", "30"),
+                new ShopData(R.drawable.crocodiledogchewtoy,"Chew toy", "6"),
+                new ShopData(R.drawable.dogcarseat,"Pet car seat", "20"),
+                new ShopData(R.drawable.dogtreatjar,"Treat jar", "9"),
+                new ShopData(R.drawable.fishhammock,"Fish hammock (Leaf)", "5"),
+                new ShopData(R.drawable.fishtankshipwreck,"Fish tank shipwreck", "9"),
+                new ShopData(R.drawable.fishtankspookycave,"Fish tank spooky cave", "12"),
+                new ShopData(R.drawable.hamsterwheelcar,"Hamsterwheel car", "25"),
+                new ShopData(R.drawable.lizardtwinehammock,"Lizard hammock (non-leaf)", "15"),
+                new ShopData(R.drawable.petbackpack,"Pet backpack", "40"),
+                new ShopData(R.drawable.reptileheatlamp,"Reptile heat lamp", "20"),
+
+        };
+
+
+        ShopAdapter shopAdapter = new ShopAdapter(shopData, ShopActivity.this);
+        recyclerView.setAdapter(shopAdapter);
 
     }
 

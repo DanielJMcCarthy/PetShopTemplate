@@ -22,6 +22,11 @@
     <string name="btn_logout">Log Out</string>
     <string name="tv_welcome">Welcome to our store!</string>
 
+
+    <!-- Shop -->
+    <string name="tv_shop_banner">Browse our product range!</string>
+
+
     <!-- Checkout -->
     <string name="tv_pay_header">Pay Invoice</string>
     <string name="pay_invoice">Pay Invoice</string>

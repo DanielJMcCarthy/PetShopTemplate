@@ -17,11 +17,14 @@
         app:menu="@menu/bottom_nav_bar" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="348dp"
-        android:layout_height="21dp"
+        android:id="@+id/tv_shop_banner"
+        android:layout_width="351dp"
+        android:layout_height="0dp"
         android:layout_marginTop="4dp"
-        android:text="Shop"
+        android:background="@color/light_gray"
+        android:text="@string/tv_shop_banner"
+        android:textAlignment="center"
+        android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,7 +39,7 @@
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_shop_banner"
         app:layout_constraintVertical_bias="0.449" />
 
 
