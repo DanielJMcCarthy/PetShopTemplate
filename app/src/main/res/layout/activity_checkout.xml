@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".CheckoutActivity">
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".CheckoutActivity">
+
+    <EditText
+        android:id="@+id/et_postal_code"
+        android:layout_width="130dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_postal_code" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
@@ -64,14 +74,104 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_total_cost" />
 
     <EditText
+        android:id="@+id/et_pay_name"
         android:layout_width="315dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
-        android:autofillHints=""
+        android:hint="Your name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_pay_name"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_pay_name" />
+
+    <TextView
+        android:id="@+id/tv_card_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/card_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_pay_name" />
+
+
+    <EditText
+        android:id="@+id/et_card_number"
+        android:layout_width="315dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:hint="Card number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_card_number" />
+
+    <EditText
+        android:id="@+id/et_expiry"
+        android:layout_width="137dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/mm_yy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_expiry" />
+
+    <EditText
+        android:id="@+id/et_cvc"
+        android:layout_width="125dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/cvc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintStart_toEndOf="@+id/et_expiry"
+        app:layout_constraintTop_toBottomOf="@+id/tv_expiry" />
+
+    <TextView
+        android:id="@+id/tv_expiry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/expiry_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_card_number" />
+
+    <TextView
+        android:id="@+id/tv_cvc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/security_code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.618"
+        app:layout_constraintStart_toEndOf="@+id/tv_expiry"
+        app:layout_constraintTop_toBottomOf="@+id/et_card_number" />
+
+    <TextView
+        android:id="@+id/tv_postal_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/postal_code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_expiry" />
+
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="167dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/pay_now"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_postal_code" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

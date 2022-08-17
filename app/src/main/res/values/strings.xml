@@ -24,16 +24,23 @@
 
     <!-- Checkout -->
     <string name="tv_pay_header">Pay Invoice</string>
-
+    <string name="pay_invoice">Pay Invoice</string>
+    <string name="payment_amount">Payment amount</string>
+    <string name="tv_total_cost">€</string>
+    <string name="name_on_card">Name on card</string>
+    <string name="card_number">Card number</string>
+    <string name="security_code">Security code</string>
+    <string name="cvc">CVC</string>
+    <string name="pay_now">Pay now</string>
+    <string name="mm_yy">MM/YY</string>
+    <string name="postal_code">Postal code</string>
 
     <!-- Strings Nav Bar -->
     <string name="home">Home</string>
     <string name="shop">Shop</string>
     <string name="basket">Basket</string>
     <string name="checkout">Checkout</string>
-    <string name="pay_invoice">Pay Invoice</string>
-    <string name="payment_amount">Payment amount</string>
-    <string name="tv_total_cost">€</string>
-    <string name="name_on_card">Name on card</string>
+    <string name="expiry_date">Expiry date</string>
+
 
 </resources>
