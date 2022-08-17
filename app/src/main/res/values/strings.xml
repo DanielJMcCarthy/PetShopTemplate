@@ -34,13 +34,15 @@
     <string name="pay_now">Pay now</string>
     <string name="mm_yy">MM/YY</string>
     <string name="postal_code">Postal code</string>
+    <string name="expiry_date">Expiry date</string>
+    <string name="tv_order_number"> </string>
 
     <!-- Strings Nav Bar -->
     <string name="home">Home</string>
     <string name="shop">Shop</string>
     <string name="basket">Basket</string>
     <string name="checkout">Checkout</string>
-    <string name="expiry_date">Expiry date</string>
+    <string name="your_name">Your name</string>
 
 
 </resources>

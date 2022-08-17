@@ -7,12 +7,20 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.barkingmadpetstorev2.databinding.ActivityCheckoutBinding;
+
+import java.util.Random;
 
 public class CheckoutActivity extends AppCompatActivity {
 
     ActivityCheckoutBinding binding;
+    Button btn_pay;
+    TextView tv_order_number;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +58,34 @@ public class CheckoutActivity extends AppCompatActivity {
             return true;
         });
 
+
+
+        btn_pay = findViewById(R.id.btn_pay);
+        tv_order_number = findViewById(R.id.tv_order_number);
+        Random rand = new Random();
+
+
+        // Listener for the pay button
+        btn_pay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView tv_order_number = (TextView)findViewById(R.id.tv_order_number);
+
+                // There's for sure a better way to do this
+                int basenum = 1000000;
+                int randnum_modifier =  rand.nextInt(8999999);
+                int order_num_int = basenum + randnum_modifier;
+                String order_num_text = String.valueOf(order_num_int);
+
+                tv_order_number.setText("Order Number: " + order_num_text);
+
+            }
+
+        });
+
     }
+
+
 
 
     // Method for swapping out fragments

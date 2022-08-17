@@ -24,7 +24,9 @@ tools:context=".CheckoutActivity">
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_nav_bar" />
+        app:menu="@menu/bottom_nav_bar">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     <TextView
         android:id="@+id/tv_pay_header"
@@ -66,7 +68,7 @@ tools:context=".CheckoutActivity">
         android:id="@+id/tv_pay_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:text="@string/name_on_card"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.167"
@@ -78,7 +80,7 @@ tools:context=".CheckoutActivity">
         android:layout_width="315dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
-        android:hint="Your name"
+        android:hint="@string/your_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toStartOf="parent"
@@ -101,7 +103,7 @@ tools:context=".CheckoutActivity">
         android:layout_width="315dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
-        android:hint="Card number"
+        android:hint="@string/card_number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toStartOf="parent"
@@ -172,6 +174,17 @@ tools:context=".CheckoutActivity">
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_postal_code" />
+
+    <TextView
+        android:id="@+id/tv_order_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tv_order_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pay" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
