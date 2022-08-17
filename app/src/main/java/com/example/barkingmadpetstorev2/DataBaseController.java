@@ -2,6 +2,7 @@ package com.example.barkingmadpetstorev2;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.database.sqlite.SQLiteDatabase.CursorFactory;
@@ -35,4 +36,15 @@ public class DataBaseController extends SQLiteOpenHelper {
         long insert = db.insert("USER_TABLE", (String)null, cv);
         return insert != -1L;
     }
+
+    // User validation Attempt
+    public boolean isUser(String email) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        String queryString = "SELECT 1 FROM " + USER_TABLE + " WHERE " + COLUMN_USER_EMAIL + " = ?";
+        Cursor c = db.rawQuery(queryString, new String[]{email});
+        boolean result = c.getCount() > 0;
+        c.close();
+        return result;
+    }
+
 }

@@ -47,8 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
 
-                //String validations
-                // IDEAS todo
+                //String validation
                 // maybe a do while loop or something here to stop blank data being added to the db
                 // or boolean 'Validations' if true - block userModel creation
                 // todo if yser in db, do not add user model, but continue with login
@@ -56,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
                 //                  SQL command would be something like String query = "SELECT 1 FROM " + USERS + " WHERE " + et_email + " = ?";
                 //                     && -> same for password
                 //                      if true: Toast.makeText(MainActivity.this, "Welcome back" + userModel.getUsername() + "!", Toast.LENGTH_SHORT).show();
+                // todo see DataBaseController.java for my isUser() method. This would be one way to query a result.
+
 
                 if(et_email.length() == 0) {
                     try {
