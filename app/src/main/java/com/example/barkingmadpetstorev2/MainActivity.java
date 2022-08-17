@@ -3,6 +3,7 @@ package com.example.barkingmadpetstorev2;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -51,6 +52,10 @@ public class MainActivity extends AppCompatActivity {
                 // maybe a do while loop or something here to stop blank data being added to the db
                 // or boolean 'Validations' if true - block userModel creation
                 // todo if yser in db, do not add user model, but continue with login
+                //                if(et_email && et_password) --> user cursor to search in DB to .getWordMatches()
+                //                  SQL command would be something like String query = "SELECT 1 FROM " + USERS + " WHERE " + et_email + " = ?";
+                //                     && -> same for password
+                //                      if true: Toast.makeText(MainActivity.this, "Welcome back" + userModel.getUsername() + "!", Toast.LENGTH_SHORT).show();
 
                 if(et_email.length() == 0) {
                     try {

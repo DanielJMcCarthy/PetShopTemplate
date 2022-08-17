@@ -77,7 +77,8 @@ public class CheckoutActivity extends AppCompatActivity {
                 int order_num_int = basenum + randnum_modifier;
                 String order_num_text = String.valueOf(order_num_int);
 
-                tv_order_number.setText("Order Number: " + order_num_text);
+                tv_order_number.setText(
+                        "Order Number: " + order_num_text);
 
             }
 
