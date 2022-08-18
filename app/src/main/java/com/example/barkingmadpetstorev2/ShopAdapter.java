@@ -14,11 +14,8 @@ import androidx.recyclerview.widget.RecyclerView;
 public class ShopAdapter extends RecyclerView.Adapter<ShopAdapter.ViewHolder> {
 
     //Local array instead of database injection
-
     ShopData[] shopData;
     Context context;
-
-
 
 
     public ShopAdapter(ShopData[] shopData, ShopActivity activity) {
@@ -41,7 +38,6 @@ public class ShopAdapter extends RecyclerView.Adapter<ShopAdapter.ViewHolder> {
         final ShopData shopDataList = shopData[position];
         holder.itemTitle.setText(shopDataList.getItemTitle());
         holder.itemPrice.setText(shopDataList.getItemPrice());
-        //could have trouble here
         holder.itemImage.setImageResource(shopDataList.getItemImage());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -66,7 +62,6 @@ public class ShopAdapter extends RecyclerView.Adapter<ShopAdapter.ViewHolder> {
         TextView itemPrice;
 
 
-
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             itemImage = itemView.findViewById(R.id.item_image);
@@ -75,12 +70,5 @@ public class ShopAdapter extends RecyclerView.Adapter<ShopAdapter.ViewHolder> {
 
         }
     }
-
-
-
-
-
-
-
 
 }

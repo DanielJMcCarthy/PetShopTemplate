@@ -59,7 +59,6 @@ public class CheckoutActivity extends AppCompatActivity {
         });
 
 
-
         btn_pay = findViewById(R.id.btn_pay);
         tv_order_number = findViewById(R.id.tv_order_number);
         Random rand = new Random();
@@ -78,15 +77,13 @@ public class CheckoutActivity extends AppCompatActivity {
                 String order_num_text = String.valueOf(order_num_int);
 
                 tv_order_number.setText(
-                        "Order Number: " + order_num_text);
+                        getString(R.string.orderNum) + order_num_text);
 
             }
 
         });
 
     }
-
-
 
 
     // Method for swapping out fragments

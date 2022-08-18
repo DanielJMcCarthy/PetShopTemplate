@@ -17,8 +17,6 @@ public class DataBaseController extends SQLiteOpenHelper {
     public static final String COLUMN_USER_NAME = "USER_NAME";
     public static final String ID = "ID";
 
-
-
     //SAMPLE CART DB (TESTING)
 //    public static final String CART_TABLE = "CART_TABLE";
 //    private static final String ITEM_TITLE = "ITEM_TITLE";
@@ -55,9 +53,6 @@ public class DataBaseController extends SQLiteOpenHelper {
         c.close();
         return result;
     }
-
-
-
 
 
 //      ListView Attempt

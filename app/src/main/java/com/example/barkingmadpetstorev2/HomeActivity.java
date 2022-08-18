@@ -15,7 +15,6 @@ import android.widget.Button;
 import com.example.barkingmadpetstorev2.databinding.ActivityHomeBinding;
 
 
-
 public class HomeActivity extends AppCompatActivity{
     ActivityHomeBinding binding;
 //    final Handler handler = new Handler();
@@ -53,13 +52,11 @@ public class HomeActivity extends AppCompatActivity{
                     startActivity(checkoutIntent);
                     replaceFragment(new CheckoutFragment());
                     break;
-
-
-
             }
 
             return true;
         });
+
 
         btn_logout = findViewById(R.id.btn_logout);
 
@@ -77,8 +74,6 @@ public class HomeActivity extends AppCompatActivity{
         });
         
     }
-
-
 
 
     // Method for swapping out fragments

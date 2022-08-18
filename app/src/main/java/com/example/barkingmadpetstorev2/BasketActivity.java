@@ -17,8 +17,9 @@ import com.example.barkingmadpetstorev2.databinding.ActivityBasketBinding;
 public class BasketActivity extends AppCompatActivity {
 
     ActivityBasketBinding binding;
-
     Button btn_proceed_to_checkout;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,7 +51,6 @@ public class BasketActivity extends AppCompatActivity {
                     startActivity(checkoutIntent);
                     replaceFragment(new CheckoutFragment());
                     break;
-
 
             }
 
