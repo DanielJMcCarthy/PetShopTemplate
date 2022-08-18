@@ -6,6 +6,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.database.sqlite.SQLiteDatabase.CursorFactory;
+import android.widget.SimpleCursorAdapter;
+
 import androidx.annotation.Nullable;
 
 public class DataBaseController extends SQLiteOpenHelper {
@@ -14,6 +16,13 @@ public class DataBaseController extends SQLiteOpenHelper {
     public static final String COLUMN_USER_PASSWORD = "USER_PASSWORD";
     public static final String COLUMN_USER_NAME = "USER_NAME";
     public static final String ID = "ID";
+
+
+
+    //SAMPLE CART DB (TESTING)
+//    public static final String CART_TABLE = "CART_TABLE";
+//    private static final String ITEM_TITLE = "ITEM_TITLE";
+//    private static final String ITEM_PRICE = "ITEM_PRICE";
 
     public DataBaseController(@Nullable Context context) {
         super(context, "users.db", (CursorFactory)null, 1);
@@ -46,5 +55,27 @@ public class DataBaseController extends SQLiteOpenHelper {
         c.close();
         return result;
     }
+
+
+
+
+
+//      ListView Attempt
+//    public SimpleCursorAdapter populateListViewFromDB(){
+//        String columns[] = {DataBaseController.ITEM_TITLE, DataBaseController.ITEM_PRICE};
+//        Cursor cursor = db.query(DataBaseController.CART_TABLE, columns,null, null);
+//        String[] fromFieldNames = new String[]{
+//                DataBaseController.ITEM_TITLE, DataBaseController.ITEM_PRICE
+//        };
+//        int[] toViewIDs = new int[]{R.id.item_title, R.id.item_price};
+//        SimpleCursorAdapter itemAdapter = new SimpleCursorAdapter(
+//                context,
+//                R.layout.list_view,
+//                cursor,
+//                fromFieldNames,
+//                toViewIDs
+//        );
+//        return itemAdapter;
+//    }
 
 }

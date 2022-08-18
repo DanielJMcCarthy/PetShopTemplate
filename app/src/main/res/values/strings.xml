@@ -27,6 +27,11 @@
     <string name="tv_shop_banner">Browse our product range!</string>
 
 
+    <!-- Cart -->
+    <string name="btn_proceed_to_checkout">Proceed to checkout</string>
+    <string name="your_cart">Your Cart</string>
+
+
     <!-- Checkout -->
     <string name="tv_pay_header">Pay Invoice</string>
     <string name="pay_invoice">Pay Invoice</string>
@@ -41,6 +46,7 @@
     <string name="postal_code">Postal code</string>
     <string name="expiry_date">Expiry date</string>
     <string name="tv_order_number"> </string>
+    <string name="tv_price">Price</string>
 
     <!-- Strings Nav Bar -->
     <string name="home">Home</string>
@@ -48,7 +54,8 @@
     <string name="basket">Basket</string>
     <string name="checkout">Checkout</string>
     <string name="your_name">Your name</string>
-    <string name="tv_price">Price</string>
+
+
 
 
 </resources>

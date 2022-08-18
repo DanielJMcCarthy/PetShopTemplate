@@ -7,6 +7,8 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ListView;
+import android.widget.SimpleCursorAdapter;
 
 import com.example.barkingmadpetstorev2.databinding.ActivityBasketBinding;
 
@@ -51,6 +53,15 @@ public class BasketActivity extends AppCompatActivity {
 
             return true;
         });
+
+// Listview attempt
+//        ListView lvItems = findViewById(R.id.lv_items);
+//        SimpleCursorAdapter simpleCursorAdapter = DataBaseController.populateListViewFromDB();
+//        lvItems.setAdapter(simpleCursorAdapter);
+
+
+
+
 
     }
 
