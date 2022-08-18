@@ -8,8 +8,8 @@ tools:context=".CheckoutActivity">
 
     <EditText
         android:id="@+id/et_postal_code"
-        android:layout_width="130dp"
-        android:layout_height="32dp"
+        android:layout_width="134dp"
+        android:layout_height="42dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.192"

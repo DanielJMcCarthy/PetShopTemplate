@@ -48,6 +48,7 @@
     <string name="basket">Basket</string>
     <string name="checkout">Checkout</string>
     <string name="your_name">Your name</string>
+    <string name="tv_price">Price</string>
 
 
 </resources>

@@ -27,11 +27,11 @@
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcome"
         app:layout_constraintVertical_bias="0.899" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_welcome"
         android:layout_width="314dp"
         android:layout_height="20dp"
         android:layout_marginStart="32dp"
@@ -42,5 +42,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_width="343dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/tv_about"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcome" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
