@@ -42,7 +42,7 @@
         app:menu="@menu/bottom_nav_bar" />
 
     <Button
-        android:id="@+id/go_to_checkout"
+        android:id="@+id/btn_proceed_to_checkout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="180dp"

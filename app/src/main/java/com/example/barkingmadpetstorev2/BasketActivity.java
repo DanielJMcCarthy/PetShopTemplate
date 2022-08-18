@@ -7,6 +7,8 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
@@ -16,6 +18,7 @@ public class BasketActivity extends AppCompatActivity {
 
     ActivityBasketBinding binding;
 
+    Button btn_proceed_to_checkout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,6 +62,21 @@ public class BasketActivity extends AppCompatActivity {
 //        SimpleCursorAdapter simpleCursorAdapter = DataBaseController.populateListViewFromDB();
 //        lvItems.setAdapter(simpleCursorAdapter);
 
+
+        btn_proceed_to_checkout = findViewById(R.id.btn_proceed_to_checkout);
+
+        // Listener for the login button
+        btn_proceed_to_checkout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                // Explicit intent
+                Intent goToCheckout = new Intent(v.getContext(), CheckoutActivity.class);
+                startActivity(goToCheckout);
+
+            }
+
+        });
 
 
 
